@@ -1,0 +1,3 @@
+# Details of Synthetic Minority Oversampling Technique
+
+The Jupyter notebook and data plots and summary stats of the technique are stored in different folders for different datasets.
