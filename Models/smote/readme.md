@@ -5,9 +5,9 @@ Synthetic Minority Over Sampling – SMOTE – synthesises new minority instance
 ## Can SMOTE be used to generate synthetic data? 
 The technique was used on a variety of real world datasets to asses this. The approach was:
 
-* Take an existing dataset with n entries, make imbalanced (by replicating the dataset and assigning a target class) or generate a dataset with different features and an imbalance of 2:1 (this results in a generated dataset with the same number of samples at the original)
-* Run SMOTE (all variants) to generate new data samples (n new samples)
-* Remove new samples from new dataset
+* Take an existing dataset with _n_ entries, make imbalanced (by replicating the dataset and assigning a target class) or generate a dataset with different features and an imbalance of 2:1 (this results in a generated dataset with the same number of samples at the original)
+* Run SMOTE (4 variants) to generate new data samples (_n_ new samples)
+* Isolate the generated datasamples
 * Compare against original dataset – perform a correlation matrix on all the original data, all the generated data and then subtract the two correlation matrices. The resulting correlation matrix should be all zero for well-matched generated data.
 * Use the Bhattacharyya distance to measure the similarity between the original and generated probability distributions
 
